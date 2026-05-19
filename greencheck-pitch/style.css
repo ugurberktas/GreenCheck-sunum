@@ -147,15 +147,41 @@ body {
 
 /* Slide Typography and Layout Utility Templates */
 .slide-header {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .slide-title {
-  font-family: var(--font-heading);
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--green-primary) !important;
-  line-height: 1.2;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #2ECC71 !important;
+  margin: 0 0 32px 0;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.slide h1, .slide h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #2ECC71;
+  margin: 0 0 32px 0;
+  text-align: left;
+  align-self: flex-start;
+}
+
+/* Cover and closing slide exceptions */
+.slide-cover h1, .slide-cover h2,
+.slide-closing h1, .slide-closing h2,
+.slide-cover .cover-title,
+.slide-closing .closing-hero {
+  text-align: center !important;
+  align-self: center !important;
 }
 
 .slide-subtitle {
@@ -260,10 +286,11 @@ body {
 }
 
 #slide-2 .slide-header {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .problem-title {
@@ -396,10 +423,11 @@ body {
 }
 
 #slide-3 .slide-header {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .whynow-title {
@@ -484,10 +512,11 @@ body {
 }
 
 #slide-4 .slide-header {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .solution-title {
@@ -647,16 +676,19 @@ body {
 
 /* Slide 5 - How It Works Section Styles */
 #slide-5 {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 60px 80px;
+  text-align: left;
 }
 
 #slide-5 .slide-header {
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -670,7 +702,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  flex-grow: 1;
+  flex-grow: 1; /* Center cards vertically in remaining space */
 }
 
 .process-flow {
@@ -680,6 +712,14 @@ body {
   gap: 12px;
   width: 100%;
   margin-top: 0;
+}
+
+.step-subtitle {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #2ECC71;
+  font-style: italic;
+  margin-bottom: 8px;
 }
 
 .step-card {
@@ -770,14 +810,16 @@ body {
 
 /* Slide 6 - Value Proposition Section Styles */
 .value-title {
-  color: var(--text-dark);
+  color: #2ECC71;
 }
 
 .value-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .value-cards {
@@ -785,7 +827,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   width: 100%;
-  margin-top: -30px;
+  margin-top: 0;
 }
 
 .value-card {
@@ -816,7 +858,7 @@ body {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--text-dark);
+  color: #0D1F14;
   letter-spacing: -0.01em;
 }
 
@@ -851,16 +893,18 @@ body {
 .comp-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .comp-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  margin-top: -20px;
-  margin-bottom: 24px;
+  margin-top: 0px;
+  margin-bottom: 32px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(13, 31, 20, 0.03);
@@ -957,8 +1001,8 @@ body {
   font-weight: 700;
   color: var(--green-dark);
   text-align: center;
-  margin-top: auto;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   letter-spacing: -0.01em;
 }
 
