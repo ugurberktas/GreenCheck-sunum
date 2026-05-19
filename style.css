@@ -808,6 +808,33 @@ body {
   }
 }
 
+.step-training-note {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  background-color: #E8F5EE;
+  border-left: 4px solid #2ECC71;
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin-top: 24px;
+  box-sizing: border-box;
+}
+
+.step-training-note .note-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.step-training-note .note-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #0D1F14;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
 /* Slide 6 - Value Proposition Section Styles */
 .value-title {
   color: #2ECC71;
