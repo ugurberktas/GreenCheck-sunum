@@ -506,13 +506,15 @@ body {
 
 /* Slide 4 - Our Solution Section Styles */
 #slide-4 {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 60px 80px;
 }
 
 #slide-4 .slide-header {
-  margin-bottom: 0px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -529,6 +531,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  flex-grow: 1;
 }
 
 .solution-intro {
