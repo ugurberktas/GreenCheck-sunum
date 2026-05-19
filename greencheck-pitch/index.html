@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenCheck Pitch Deck — TRUK Accelerator</title>
+  <meta name="description" content="Interactive browser-based pitch deck for GreenCheck, a B2B SaaS startup. Prepared for the TRUK Accelerator interview.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Presentation Wrapper -->
+  <div class="deck-container">
+    
+    <!-- Top Progress Indicator -->
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+    
+    <!-- Keyboard Navigation Guide -->
+    <!-- Removed Keyboard Guide -->
+    
+    <!-- Slide Counter -->
+    <div class="slide-counter">
+      <span id="counter-current">1</span> / <span id="counter-total">12</span>
+    </div>
+    
+    <!-- Slide 1 -->
+    <div id="slide-1" class="slide active slide-cover">
+      <div class="cover-content">
+        <img src="logo.png" alt="GreenCheck" class="cover-logo">
+        <h1 class="cover-title">GreenCheck</h1>
+        <div class="cover-separator"></div>
+        <p class="cover-tagline">Banks can't measure what they can't afford to audit. We fix that.</p>
+      </div>
+      <div class="cover-footer">
+        TRUK Accelerator — May 2026
+      </div>
+    </div>
+    
+    <!-- Slide 2 -->
+    <div id="slide-2" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title problem-title">The Problem</h2>
+        <p class="problem-lead">Banks must measure SME sustainability by law — but can't afford to.</p>
+      </div>
+      <div class="slide-content problem-content">
+        <ul class="problem-bullets">
+          <li>
+            <span class="bullet-number">01</span>
+            <span class="bullet-text"><strong>TCFD and ISSB regulations</strong> require banks to report SME ESG data</span>
+          </li>
+          <li>
+            <span class="bullet-number">02</span>
+            <span class="bullet-text"><strong>Traditional ESG audits</strong> cost over $1,000 per SME</span>
+          </li>
+          <li>
+            <span class="bullet-number">03</span>
+            <span class="bullet-text">A bank with 10,000 SMEs faces <strong>$10M+ in audit costs</strong> — impossible</span>
+          </li>
+        </ul>
+        
+        <div class="problem-evidence">
+          <div class="evidence-card">
+            <span class="evidence-source">NATWEST — 2023 CLIMATE REPORT</span>
+            <p class="evidence-text">"SME data gap explicitly acknowledged"</p>
+            <p class="evidence-detail">NatWest formally identified reliable SME emissions data as one of the biggest barriers to portfolio-level climate risk assessment.</p>
+          </div>
+          <div class="evidence-card">
+            <span class="evidence-source">LLOYDS — 2023 SUSTAINABILITY METRICS</span>
+            <p class="evidence-text">"Insufficient Scope 3 data limits portfolio risk visibility"</p>
+            <p class="evidence-detail">Lloyds explicitly reported insufficient data in specific sectors as a barrier to accurate Scope 3 emissions measurement.</p>
+          </div>
+          <div class="evidence-card">
+            <span class="evidence-source">BARCLAYS & UK GOVERNMENT — SCOPE 3 CONSULTATION</span>
+            <p class="evidence-text">"SME data bottleneck formally reported in Scope 3 consultations"</p>
+            <p class="evidence-detail">Barclays joined the Perseus programme to address the SME data gap and formally reported this bottleneck in the UK government's Scope 3 Call for Evidence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 3 -->
+    <div id="slide-3" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title whynow-title">Why Now?</h2>
+      </div>
+      <div class="slide-content whynow-content">
+        <div class="whynow-columns">
+          
+          <!-- Left Column: Regulatory Pressure -->
+          <div class="whynow-column">
+            <h3 class="whynow-col-title">Regulatory Pressure</h3>
+            <ul class="whynow-list">
+              <li>
+                <p><strong>TCFD compliance</strong> is already mandatory for large UK financial institutions</p>
+              </li>
+              <li>
+                <p><strong>ISSB Scope 3</strong> reporting requirements are expanding globally</p>
+              </li>
+              <li>
+                <p>Turkey: Banks must deploy <span class="highlight-stat">$3.15B</span> green transformation fund — but have no measurement infrastructure</p>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Right Column: Market Opportunity -->
+          <div class="whynow-column">
+            <h3 class="whynow-col-title">Market Opportunity</h3>
+            <ul class="whynow-list">
+              <li>
+                <p>ESG data verification market grows <span class="highlight-stat">$4.09B</span> by 2030</p>
+              </li>
+              <li>
+                <p>Annual growth rate: <span class="highlight-stat">29.2%</span> — driven by regulation, not trend</p>
+              </li>
+              <li>
+                <p>Turkey: <span class="highlight-stat">3.92M</span> registered SMEs, zero ESG measurement infrastructure today</p>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 4 -->
+    <div id="slide-4" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title solution-title">Our Solution</h2>
+      </div>
+      <div class="slide-content solution-content">
+        <div class="solution-intro">
+          <h3 class="solution-hero">"We turn banks' existing field staff into digital ESG verifiers — <span class="no-wrap">no new hires, no new departments."</span></h3>
+          <p class="solution-desc">
+            GreenCheck embeds into existing bank operations. When an SME applies for credit, the nearest field officer completes a structured 5-10 minute ESG checklist during their regular visit. <strong>GPS-verified. Photo-evidenced. Instantly scored.</strong>
+          </p>
+        </div>
+        
+        <div class="solution-comparison">
+          <!-- BEFORE Box -->
+          <div class="comparison-box before-box">
+            <span class="box-badge">BEFORE</span>
+            <div class="box-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Who</span>
+                <span class="metric-val">External auditor</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Cost</span>
+                <span class="metric-val">$1,000+ <small>/ SME</small></span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Timeline</span>
+                <span class="metric-val">Weeks of delay</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- AFTER Box -->
+          <div class="comparison-box after-box">
+            <span class="box-badge">AFTER WITH GREENCHECK</span>
+            <div class="box-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Who</span>
+                <span class="metric-val">Bank's own field officer</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Cost</span>
+                <span class="metric-val">$40-60 <small>/ SME</small></span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Timeline</span>
+                <span class="metric-val">Same-day result</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 5 -->
+    <div id="slide-5" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title how-title">How It Works</h2>
+      </div>
+      <div class="slide-content how-content">
+        <div class="process-flow">
+          
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number-watermark">01</div>
+            <div class="step-icon">🗂️</div>
+            <h3 class="step-title">Request & Assignment</h3>
+            <p class="step-desc">SME applies for credit. Bank officer opens GreenCheck. System assigns nearest field staff via map.</p>
+          </div>
+          
+          <div class="step-arrow">→</div>
+          
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number-watermark">02</div>
+            <div class="step-icon">📲</div>
+            <h3 class="step-title">Field Visit</h3>
+            <p class="step-desc">Officer visits SME during regular visit. Completes a structured yes/no checklist with photo evidence. Takes 5-10 minutes.</p>
+          </div>
+          
+          <div class="step-arrow">→</div>
+          
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number-watermark">03</div>
+            <div class="step-icon">⚡</div>
+            <h3 class="step-title">Auto Scoring</h3>
+            <p class="step-desc">Data is processed instantly. GreenCheck generates a TCFD and GRI compliant sustainability profile via API.</p>
+          </div>
+          
+          <div class="step-arrow">→</div>
+          
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-number-watermark">04</div>
+            <div class="step-icon">✅</div>
+            <h3 class="step-title">Decision Ready</h3>
+            <p class="step-desc">Standardized report delivered to credit team. GreenCheck never touches the credit decision — only the data behind it.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 6 -->
+    <div id="slide-6" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title value-title">Value Proposition</h2>
+      </div>
+      <div class="slide-content value-content">
+        <div class="value-cards">
+          
+          <!-- Card 1: Cost Reduction -->
+          <div class="value-card">
+            <div class="value-icon">💰</div>
+            <h3 class="value-card-title">90% Cost Reduction</h3>
+            <div class="value-stat">$1,000+ → $40-60</div>
+            <p class="value-desc">Same legal compliance. One-tenth the cost. Per SME, every time.</p>
+          </div>
+          
+          <!-- Card 2: Zero Operational Burden -->
+          <div class="value-card">
+            <div class="value-icon">⚙️</div>
+            <h3 class="value-card-title">Zero Operational Burden</h3>
+            <div class="value-stat">0 new hires</div>
+            <p class="value-desc">Plugs into existing field visits as a minimal digital step. No new departments, no training programs.</p>
+          </div>
+          
+          <!-- Card 3: Defensible Data -->
+          <div class="value-card">
+            <div class="value-icon">🛡️</div>
+            <h3 class="value-card-title">Defensible Data</h3>
+            <div class="value-stat">70/30 verification</div>
+            <p class="value-desc">70% bank personnel input, 30% secondary source. 15%+ deviation triggers manual review. Regulator-ready.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 7 -->
+    <div id="slide-7" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title comp-title">Competitive Landscape</h2>
+      </div>
+      <div class="slide-content comp-content">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>EcoVadis</th>
+              <th>Sustainalytics</th>
+              <th>MSCI ESG</th>
+              <th class="greencheck-cell-header">GreenCheck</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">SME-Scale Field Operations</td>
+              <td><span class="icon-cross">❌</span></td>
+              <td><span class="icon-cross">❌</span></td>
+              <td><span class="icon-cross">❌</span></td>
+              <td class="greencheck-cell"><span class="icon-check">✅</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Mobile Data Collection</td>
+              <td><span class="icon-cross">❌</span></td>
+              <td><span class="icon-cross">❌</span></td>
+              <td><span class="icon-cross">❌</span></td>
+              <td class="greencheck-cell"><span class="icon-check">✅</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">GPS + Photo Verification</td>
+              <td><span class="icon-cross">❌</span></td>
+              <td><span class="icon-cross">❌</span></td>
+              <td><span class="icon-cross">❌</span></td>
+              <td class="greencheck-cell"><span class="icon-check">✅</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Bank Staff Integration</td>
+              <td><span class="icon-cross">❌</span></td>
+              <td><span class="icon-cross">❌</span></td>
+              <td><span class="icon-cross">❌</span></td>
+              <td class="greencheck-cell"><span class="icon-check">✅</span></td>
+            </tr>
+            <tr class="cost-row">
+              <td class="feature-name">Cost Per Assessment</td>
+              <td class="other-cost">$500-2,000</td>
+              <td class="other-cost">$800+</td>
+              <td class="other-cost">$1,000+</td>
+              <td class="greencheck-cell greencheck-cost">$40-60</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p class="comp-summary">"Built from the ground up for SME-scale. Others weren't."</p>
+      </div>
+    </div>
+    
+    <!-- Slide 8 -->
+    <div id="slide-8" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title model-title">Business Model</h2>
+      </div>
+      <div class="slide-content model-content">
+        <div class="model-phases">
+          
+          <!-- Phase 1 Card -->
+          <div class="phase-card phase-1-card">
+            <span class="phase-label">Phase 1 — Now</span>
+            <h3 class="phase-title">Transaction-Based</h3>
+            <span class="phase-timeline">Months 6-12 post MVP</span>
+            <p class="phase-desc">Bank pays per verified SME report. Simple, no commitment required. Easy first contract.</p>
+            <div class="phase-price">$40-60 <small>per assessment</small></div>
+          </div>
+          
+          <!-- Phase 2 Card -->
+          <div class="phase-card phase-2-card">
+            <span class="phase-label">Phase 2 — Scale</span>
+            <h3 class="phase-title">Annual SaaS</h3>
+            <span class="phase-timeline">Months 12-18</span>
+            <p class="phase-desc">Portfolio-based flat annual license. Bank pays once for unlimited assessments within their SME portfolio.</p>
+            <div class="phase-price">Annual contract <small>per portfolio</small></div>
+          </div>
+          
+        </div>
+        
+        <!-- Unit Economics Bar -->
+        <div class="unit-economics">
+          <div class="economics-header">Unit Economics</div>
+          <div class="economics-row">
+            <div class="economics-stat">
+              <span class="econ-val">~$8-12</span>
+              <span class="econ-label">Cost to serve per assessment</span>
+            </div>
+            <div class="economics-divider"></div>
+            <div class="economics-stat">
+              <span class="econ-val">~70%+</span>
+              <span class="econ-label">Gross profit margin</span>
+            </div>
+            <div class="economics-divider"></div>
+            <div class="economics-stat">
+              <span class="econ-val">$20K-30K</span>
+              <span class="econ-label">First contract ARR target (500 SMEs)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 9 -->
+    <div id="slide-9" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title traction-title">Traction</h2>
+      </div>
+      <div class="slide-content traction-content">
+        <div class="traction-columns">
+          
+          <!-- Left Column: Achieved -->
+          <div class="traction-column achieved-col">
+            <h3 class="traction-col-title">ACHIEVED</h3>
+            <div class="traction-items">
+              
+              <!-- Item 1 -->
+              <div class="achieved-card">
+                <span class="achieved-icon">✅</span>
+                <div class="achieved-body">
+                  <h4 class="achieved-card-title">TÜBİTAK 1812 BiGG Program</h4>
+                  <p class="achieved-card-desc">Accepted into Turkey's most competitive early-stage startup program.</p>
+                </div>
+              </div>
+              
+              <!-- Item 2 -->
+              <div class="achieved-card">
+                <span class="achieved-icon">✅</span>
+                <div class="achieved-body">
+                  <h4 class="achieved-card-title">Working MVP In Development</h4>
+                  <p class="achieved-card-desc">Bank panel, field officer mobile app, and SME transparency panel — all three modules active.</p>
+                </div>
+              </div>
+              
+              <!-- Item 3 -->
+              <div class="achieved-card">
+                <span class="achieved-icon">✅</span>
+                <div class="achieved-body">
+                  <h4 class="achieved-card-title">TRUK Accelerator Shortlist</h4>
+                  <p class="achieved-card-desc">Selected among top applicants for DenizBank's accelerator program.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          <!-- Right Column: Next Milestones -->
+          <div class="traction-column milestones-col">
+            <h3 class="traction-col-title">NEXT MILESTONES</h3>
+            <div class="milestone-items">
+              
+              <!-- Milestone 1 -->
+              <div class="milestone-item">
+                <div class="milestone-left">
+                  <span class="milestone-icon">🎯</span>
+                  <span class="milestone-title">MVP Complete</span>
+                </div>
+                <div class="milestone-date">Q3 2026</div>
+              </div>
+              
+              <!-- Milestone 2 -->
+              <div class="milestone-item">
+                <div class="milestone-left">
+                  <span class="milestone-icon">🎯</span>
+                  <span class="milestone-title">First Paid Pilot</span>
+                </div>
+                <div class="milestone-date">Q4 2026</div>
+              </div>
+              
+              <!-- Milestone 3 -->
+              <div class="milestone-item">
+                <div class="milestone-left">
+                  <span class="milestone-icon">🎯</span>
+                  <span class="milestone-title">Commercial SaaS</span>
+                </div>
+                <div class="milestone-date">Q2 2027</div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 10 -->
+    <div id="slide-10" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title team-title">Team</h2>
+      </div>
+      <div class="slide-content team-content">
+        <div class="team-cards">
+          
+          <!-- Member 1 -->
+          <div class="team-card">
+            <div class="avatar-placeholder">U</div>
+            <h3 class="member-name">Uğur [Surname]</h3>
+            <span class="member-role">CO-FOUNDER & CEO</span>
+            <p class="member-bio">Background in [field]. Responsible for product vision, business development and investor relations.</p>
+          </div>
+          
+          <!-- Member 2 -->
+          <div class="team-card">
+            <div class="avatar-placeholder">C</div>
+            <h3 class="member-name">Co-Founder [Name]</h3>
+            <span class="member-role">CO-FOUNDER & CTO</span>
+            <p class="member-bio">Background in [field]. Leads technical architecture, MVP development and data infrastructure.</p>
+          </div>
+          
+        </div>
+        
+        <p class="team-why-us">
+          "Why us? We are building GreenCheck because we saw the problem firsthand — not because ESG is trending."
+        </p>
+      </div>
+    </div>
+    
+    <!-- Slide 11 -->
+    <div id="slide-11" class="slide">
+      <div class="slide-header">
+        <h2 class="slide-title truk-title">What We Want from TRUK</h2>
+      </div>
+      <div class="slide-content truk-content">
+        <div class="truk-columns">
+          
+          <!-- Left Column: What We're Looking For -->
+          <div class="truk-column looking-col">
+            <h3 class="truk-col-title">WHAT WE'RE LOOKING FOR</h3>
+            <div class="truk-items">
+              <div class="truk-item grey-item">
+                <span class="truk-arrow-icon">→</span>
+                <p class="truk-text">Access to <strong>DenizBank's SME network</strong> for pilot design</p>
+              </div>
+              <div class="truk-item grey-item">
+                <span class="truk-arrow-icon">→</span>
+                <p class="truk-text">Regulatory navigation support (<strong>BDDK and CMB</strong> compliance)</p>
+              </div>
+              <div class="truk-item grey-item">
+                <span class="truk-arrow-icon">→</span>
+                <p class="truk-text">Introduction to <strong>UK-based fintech partners</strong> for market entry</p>
+              </div>
+              <div class="truk-item grey-item">
+                <span class="truk-arrow-icon">→</span>
+                <p class="truk-text">Mentorship on <strong>B2B enterprise sales cycles</strong></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Column: What We Bring to TRUK -->
+          <div class="truk-column bringing-col">
+            <h3 class="truk-col-title">WHAT WE BRING TO TRUK</h3>
+            <div class="truk-items">
+              <div class="truk-item green-item">
+                <span class="truk-arrow-icon">→</span>
+                <p class="truk-text"><strong>First-mover</strong> in Turkey's SME ESG data infrastructure</p>
+              </div>
+              <div class="truk-item green-item">
+                <span class="truk-arrow-icon">→</span>
+                <p class="truk-text"><strong>TÜBİTAK-validated</strong> technical foundation</p>
+              </div>
+              <div class="truk-item green-item">
+                <span class="truk-arrow-icon">→</span>
+                <p class="truk-text">Clear <strong>regulatory tailwind</strong> — this is a mandate, not a bet</p>
+              </div>
+              <div class="truk-item green-item">
+                <span class="truk-arrow-icon">→</span>
+                <p class="truk-text">A team building this because the <strong>problem is real</strong></p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 12 -->
+    <div id="slide-12" class="slide slide-closing">
+      <div class="closing-content">
+        <h2 class="closing-hero">
+          <span class="closing-line-1">The infrastructure for green finance doesn't exist yet.</span>
+          <span class="closing-line-2">We're building it.</span>
+        </h2>
+        
+        <div class="closing-signature">
+          <img src="logo.png" alt="GreenCheck Logo" class="closing-logo">
+          <span class="closing-domain">greencheck.io</span>
+        </div>
+      </div>
+      <div class="closing-footer">
+        ugur@greencheck.io
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
