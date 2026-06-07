@@ -1,5 +1,4 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap');
 
 :root {
   /* Design system colors */
@@ -30,12 +29,8 @@
 }
 
 body {
-  font-family: var(--font-body);
-  color: var(--text-dark);
-  background-color: var(--bg-light);
+  font-family: 'DM Sans', sans-serif;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -68,27 +63,26 @@ body {
 
 /* Slide Base Style - 100vw x 100vh, full screen */
 .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   padding: 60px 80px;
-  display: flex;
+  background: var(--bg-light);
+  display: none;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
-  pointer-events: none;
-  z-index: 1;
-  transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  background: transparent;
+  transition: opacity 0.4s ease;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-/* Active slide display and transition */
 .slide.active {
+  display: flex;
   opacity: 1;
-  pointer-events: auto;
-  z-index: 2;
 }
 
 /* Premium Navigation Elements */
@@ -157,12 +151,17 @@ body {
 
 .slide-title {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 42px;
   font-weight: 700;
-  color: #2ECC71 !important;
+  font-size: 42px;
+  color: #2ECC71;
   margin: 0 0 32px 0;
   flex-shrink: 0;
-  text-align: left;
+  align-self: flex-start;
+  position: relative;
+  top: 0;
+  left: 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
 }
 
 .slide h1, .slide h2 {
@@ -273,7 +272,7 @@ body {
 .slide-closing.active ~ .slide-counter {
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  color: var(--bg-white);
+  color: var(--green-dark);
 }
 
 

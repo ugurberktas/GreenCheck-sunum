@@ -1,571 +1,694 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreenCheck Pitch Deck — TRUK Accelerator</title>
-  <meta name="description" content="Interactive browser-based pitch deck for GreenCheck, a B2B SaaS startup. Prepared for the TRUK Accelerator interview.">
+  <title>GreenCheck</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-  <!-- Presentation Wrapper -->
+
   <div class="deck-container">
-    
-    <!-- Top Progress Indicator -->
+
     <div class="progress-bar-container">
       <div class="progress-bar"></div>
     </div>
-    
-    <!-- Keyboard Navigation Guide -->
-    <!-- Removed Keyboard Guide -->
-    
-    <!-- Slide Counter -->
+
     <div class="slide-counter">
       <span id="counter-current">1</span> / <span id="counter-total">12</span>
     </div>
-    
-    <!-- Slide 1 -->
+
+    <!-- Slide 1 — Kapak -->
     <div id="slide-1" class="slide active slide-cover">
       <div class="cover-content">
         <img src="logo.png" alt="GreenCheck" class="cover-logo">
         <h1 class="cover-title">GreenCheck</h1>
         <div class="cover-separator"></div>
-        <p class="cover-tagline">Banks can't measure what they can't afford to audit. We fix that.</p>
+        <p class="cover-tagline">Bankaların ölçemediği şeyi ölçüyoruz.</p>
       </div>
       <div class="cover-footer">
-        TRUK Accelerator — May 2026
+        KOBİ Portföyleri için ESG Veri Doğrulama Platformu
       </div>
     </div>
-    
-    <!-- Slide 2 -->
-    <div id="slide-2" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title team-title">Team</h1>
-      </div>
-      <div class="slide-content team-content">
-        <div class="team-cards">
-          
-          <!-- Member 1 -->
-          <div class="team-card">
-            <img src="ugur.png" class="member-photo" alt="Uğur Berktaş">
-            <h3 class="member-name">Uğur Berktaş</h3>
-            <span class="member-role">CO-FOUNDER & CEO</span>
-            <p class="member-bio">Banking infrastructure background. IT training at DenizBank. Leads DevOps and system architecture. Ensures the platform is built to bank-grade standards.</p>
-          </div>
-          
-          <!-- Member 2 -->
-          <div class="team-card">
-            <img src="ferhat.png" class="member-photo" alt="Ferhat Bilgiç">
-            <h3 class="member-name">Ferhat Bilgiç</h3>
-            <span class="member-role">CO-FOUNDER & CTO</span>
-            <p class="member-bio">Owns the core platform architecture, backend systems and all integrations. Responsible for the secure data pipeline between field mobile app and bank reporting panel.</p>
-          </div>
-          
-          <!-- Member 3 -->
-          <div class="team-card">
-            <img src="ilaynur.png" class="member-photo" alt="İlaynur Çoban">
-            <h3 class="member-name">İlaynur Çoban</h3>
-            <span class="member-role">CO-FOUNDER & CCO</span>
-            <p class="member-bio">Drives external vision, investor relations and international business development. Leads UK market entry communication strategy.</p>
-          </div>
-          
+
+    <!-- Slide 2 — Problem -->
+    <div id="slide-2" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:60px 80px;box-sizing:border-box;overflow:hidden;padding-top:50px;">
+      <h1 class="slide-title">Problem</h1>
+      <p
+        style="font-family:'DM Sans',sans-serif;font-size:17px;color:#0D1F14;max-width:680px;margin-bottom:20px;line-height:1.6;text-align:left;margin-left:0;">
+        Bankalar, kredi verdikleri KOBİ'lerin sürdürülebilirlik verilerini yasal olarak ölçmek zorunda.
+        Ama bunu yapmanın mevcut yolu yapısal olarak karşılanamaz.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:0;margin-bottom:16px;">
+        <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:14px;">
+          <span
+            style="font-family:'Space Grotesk',sans-serif;font-size:22px;color:#2ECC71;font-weight:700;min-width:40px;line-height:1.3;">01</span>
+          <span style="font-family:'DM Sans',sans-serif;font-size:16px;color:#0D1F14;line-height:1.6;">TCFD ve ISSB
+            düzenlemeleri bankaların KOBİ'lere ait ESG verilerini raporlamasını zorunlu kılıyor</span>
         </div>
-        
-        <p class="team-why-us">
-          "Why us? We are building GreenCheck because we saw the problem firsthand — not because ESG is trending."
-        </p>
+        <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:14px;">
+          <span
+            style="font-family:'Space Grotesk',sans-serif;font-size:22px;color:#2ECC71;font-weight:700;min-width:40px;line-height:1.3;">02</span>
+          <span style="font-family:'DM Sans',sans-serif;font-size:16px;color:#0D1F14;line-height:1.6;">Geleneksel ESG
+            denetimi KOBİ başına <strong>1.000 dolar ve üzeri</strong> maliyet çıkarıyor</span>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <span
+            style="font-family:'Space Grotesk',sans-serif;font-size:22px;color:#2ECC71;font-weight:700;min-width:40px;line-height:1.3;">03</span>
+          <span style="font-family:'DM Sans',sans-serif;font-size:16px;color:#0D1F14;line-height:1.6;">10.000 KOBİ
+            portföyü olan bir banka için bu <strong>10 milyon dolarlık denetim maliyeti</strong> — finansal olarak
+            sürdürülemez</span>
+        </div>
       </div>
-    </div>
-    
-    <!-- Slide 3 -->
-    <div id="slide-3" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title problem-title">The Problem</h1>
-        <p class="problem-lead">Banks must measure SME sustainability by law — but can't afford to.</p>
+      <hr style="border:none;border-top:1px solid rgba(46,204,113,0.2);margin:14px 0;">
+      <h2
+        style="font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;color:#2ECC71;font-weight:700;margin-bottom:12px;">
+        Peki Bankalar Şu An Ne Yapıyor?</h2>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;">
+        <div style="font-family:'DM Sans',sans-serif;font-size:15px;color:#0D1F14;line-height:1.6;text-align:left;">
+          <span style="color:#2ECC71;font-weight:700;">→</span> <strong>Büyük şirketleri ölçüyorlar</strong> — EcoVadis
+          gibi pahalı çözümlerle sadece kurumsal şirketleri kapsayabiliyorlar
+        </div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:15px;color:#0D1F14;line-height:1.6;text-align:left;">
+          <span style="color:#2ECC71;font-weight:700;">→</span> <strong>KOBİ'leri atlıyorlar</strong> — KOBİ
+          portföylerinde tahmini verilerle yasal yükümlülüklerini geçiştiriyorlar
+        </div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:15px;color:#0D1F14;line-height:1.6;text-align:left;">
+          <span style="color:#2ECC71;font-weight:700;">→</span> <strong>Yeşil fonları kullanamıyorlar</strong> —
+          Türkiye'de 3,15 milyar dolarlık yeşil dönüşüm fonu var ama KOBİ'lere aktarılamıyor
+        </div>
       </div>
-      <div class="slide-content problem-content">
-        <ul class="problem-bullets">
-          <li>
-            <span class="bullet-number">01</span>
-            <span class="bullet-text"><strong>TCFD and ISSB regulations</strong> require banks to report SME ESG data</span>
-          </li>
-          <li>
-            <span class="bullet-number">02</span>
-            <span class="bullet-text"><strong>Traditional ESG audits</strong> cost over $1,000 per SME</span>
-          </li>
-          <li>
-            <span class="bullet-number">03</span>
-            <span class="bullet-text">A bank with 10,000 SMEs (Small and Medium-sized Enterprises) faces <strong>$10M+ in audit costs</strong> — financially unsustainable</span>
-          </li>
-        </ul>
-        
-        <div class="problem-evidence">
-          <div class="evidence-card">
-            <span class="evidence-source">NATWEST — 2023 CLIMATE REPORT</span>
-            <p class="evidence-text">"SME data gap explicitly acknowledged"</p>
-            <p class="evidence-detail">NatWest formally identified reliable SME emissions data as one of the biggest barriers to portfolio-level climate risk assessment.</p>
-          </div>
-          <div class="evidence-card">
-            <span class="evidence-source">LLOYDS — 2023 SUSTAINABILITY METRICS</span>
-            <p class="evidence-text">"Insufficient Scope 3 data limits portfolio risk visibility"</p>
-            <p class="evidence-detail">Lloyds explicitly reported insufficient data in specific sectors as a barrier to accurate Scope 3 emissions measurement.</p>
-          </div>
-          <div class="evidence-card">
-            <span class="evidence-source">BARCLAYS & UK GOVERNMENT — SCOPE 3 CONSULTATION</span>
-            <p class="evidence-text">"SME data bottleneck formally reported in Scope 3 consultations"</p>
-            <p class="evidence-detail">Barclays joined the Perseus programme to address the SME data gap and formally reported this bottleneck in the UK government's Scope 3 Call for Evidence.</p>
-          </div>
+      <div style="display:flex;gap:16px;">
+        <div style="flex:1;border-left:4px solid #2ECC71;background:#ffffff;padding:12px 16px;border-radius:8px;">
+          <div
+            style="font-size:11px;color:#2ECC71;font-weight:700;text-transform:uppercase;margin-bottom:6px;letter-spacing:0.04em;">
+            NATWEST — 2023 İKLİM RAPORU</div>
+          <div style="font-size:14px;font-weight:700;color:#0D1F14;line-height:1.4;">KOBİ veri eksikliği resmi olarak
+            belgelendi</div>
+        </div>
+        <div style="flex:1;border-left:4px solid #2ECC71;background:#ffffff;padding:12px 16px;border-radius:8px;">
+          <div
+            style="font-size:11px;color:#2ECC71;font-weight:700;text-transform:uppercase;margin-bottom:6px;letter-spacing:0.04em;">
+            LLOYDS — 2023 SÜRDÜRÜLEBİLİRLİK METRİKLERİ</div>
+          <div style="font-size:14px;font-weight:700;color:#0D1F14;line-height:1.4;">Kapsam 3 verilerindeki yetersizlik
+            portföy risk görünürlüğünü kısıtlıyor</div>
+        </div>
+        <div style="flex:1;border-left:4px solid #2ECC71;background:#ffffff;padding:12px 16px;border-radius:8px;">
+          <div
+            style="font-size:11px;color:#2ECC71;font-weight:700;text-transform:uppercase;margin-bottom:6px;letter-spacing:0.04em;">
+            BARCLAYS &amp; İNGİLİZ HÜKÜMETİ</div>
+          <div style="font-size:14px;font-weight:700;color:#0D1F14;line-height:1.4;">KOBİ veri darboğazı resmi olarak
+            raporlandı</div>
         </div>
       </div>
     </div>
-    
-    <!-- Slide 4 -->
-    <div id="slide-4" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title whynow-title">Why Now?</h1>
-      </div>
-      <div class="slide-content whynow-content">
-        <div class="whynow-columns">
-          
-          <!-- Left Column: Regulatory Pressure -->
-          <div class="whynow-column">
-            <h3 class="whynow-col-title">Regulatory Pressure</h3>
-            <ul class="whynow-list">
-              <li>
-                <p><strong>TCFD compliance</strong> is already mandatory for large UK financial institutions</p>
-              </li>
-              <li>
-                <p><strong>ISSB Scope 3</strong> reporting requirements are expanding globally</p>
-              </li>
-              <li>
-                <p>Turkey: Banks must deploy <span class="highlight-stat">$3.15B</span> green transformation fund — but have no measurement infrastructure</p>
-              </li>
-            </ul>
+
+    <!-- Slide 3 — Neden Şimdi? -->
+    <div id="slide-3" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:50px 80px;box-sizing:border-box;overflow:hidden;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title">Neden Şimdi?</h1>
+
+      <!-- İki Sütun -->
+      <div style="display:flex;gap:60px;align-items:flex-start;">
+
+        <!-- Sol Sütun: Düzenleyici Baskı -->
+        <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
+          <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#2ECC71;margin:0 0 4px 0;">Düzenleyici Baskı</h2>
+
+          <!-- Madde 1 -->
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:#2ECC71;font-weight:700;font-size:16px;line-height:1.7;flex-shrink:0;">•</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;color:#0D1F14;line-height:1.7;"><strong>TCFD uyumluluğu</strong> İngiltere'deki büyük finans kurumları için zaten zorunlu</span>
           </div>
-          
-          <!-- Right Column: Market Opportunity -->
-          <div class="whynow-column">
-            <h3 class="whynow-col-title">Market Opportunity</h3>
-            <ul class="whynow-list">
-              <li>
-                <p>ESG data verification market grows <span class="highlight-stat">$4.09B</span> by 2030</p>
-              </li>
-              <li>
-                <p>Annual growth rate: <span class="highlight-stat">29.2%</span> — driven by regulation, not trend</p>
-              </li>
-              <li>
-                <p>Turkey: <span class="highlight-stat">3.92M</span> registered SMEs, zero ESG measurement infrastructure today</p>
-              </li>
-            </ul>
+
+          <!-- Madde 2 -->
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:#2ECC71;font-weight:700;font-size:16px;line-height:1.7;flex-shrink:0;">•</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;color:#0D1F14;line-height:1.7;"><strong>ISSB Kapsam 3</strong> raporlama gereksinimleri küresel olarak genişliyor</span>
           </div>
-          
+
+          <!-- Madde 3 -->
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:#2ECC71;font-weight:700;font-size:16px;line-height:1.7;flex-shrink:0;">•</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;color:#0D1F14;line-height:1.7;">Türkiye: Bankalar <span style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:#2ECC71;vertical-align:middle;">3,15 milyar dolar</span>lık yeşil dönüşüm fonunu dağıtmak zorunda — ancak ölçüm altyapısı yok</span>
+          </div>
         </div>
+
+        <!-- Sağ Sütun: Pazar Fırsatı -->
+        <div style="flex:1;display:flex;flex-direction:column;gap:20px;">
+          <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#2ECC71;margin:0 0 4px 0;">Pazar Fırsatı</h2>
+
+          <!-- Madde 1 -->
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:#2ECC71;font-weight:700;font-size:16px;line-height:1.7;flex-shrink:0;">•</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;color:#0D1F14;line-height:1.7;">ESG veri doğrulama pazarı 2030'a kadar <span style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:#2ECC71;vertical-align:middle;">4,09 milyar dolara</span> büyüyecek</span>
+          </div>
+
+          <!-- Madde 2 -->
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:#2ECC71;font-weight:700;font-size:16px;line-height:1.7;flex-shrink:0;">•</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;color:#0D1F14;line-height:1.7;">Yıllık büyüme oranı: <span style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:#2ECC71;vertical-align:middle;">%29,2</span> — trendlerden değil, düzenlemelerden kaynaklanıyor</span>
+          </div>
+
+          <!-- Madde 3 -->
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="color:#2ECC71;font-weight:700;font-size:16px;line-height:1.7;flex-shrink:0;">•</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;color:#0D1F14;line-height:1.7;">Türkiye'de <span style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:#2ECC71;vertical-align:middle;">3,92 milyon</span> kayıtlı KOBİ — bugün sıfır ESG ölçüm altyapısı</span>
+          </div>
+        </div>
+
       </div>
     </div>
-    
-    <!-- Slide 5 -->
-    <div id="slide-5" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title solution-title">Our Solution</h1>
+
+    <!-- Slide 4 — Çözüm -->
+    <div id="slide-4" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:center;padding:50px 80px;box-sizing:border-box;overflow:hidden;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title" style="align-self:flex-start;">Çözüm</h1>
+
+      <!-- Hero Cümlesi -->
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:32px;font-weight:700;color:#0D1F14;max-width:700px;text-align:center;margin:0 auto 16px;line-height:1.3;">
+        Bankanın kendi saha personelini dijital ESG doğrulayıcılarına dönüştürüyoruz.
+      </p>
+
+      <!-- Açıklama Paragrafı -->
+      <p style="font-family:'DM Sans',sans-serif;font-size:15px;color:#6B7F73;max-width:620px;text-align:center;margin:0 auto 24px;line-height:1.7;">
+        GreenCheck, mevcut banka operasyonlarına entegre olur. Bir KOBİ kredi başvurusunda bulununca, en yakın saha görevlisi mevcut ziyareti sırasında 5-10 dakikalık yapılandırılmış bir ESG kontrol listesi doldurur.
+        <strong style="color:#2ECC71;">GPS doğrulamalı. Fotoğraf kanıtlı. Anında skorlanmış.</strong>
+      </p>
+
+      <!-- Analoji Kutusu -->
+      <div style="background:#ffffff;border-left:4px solid #2ECC71;padding:16px 24px;border-radius:8px;max-width:620px;margin:0 auto 28px;box-sizing:border-box;text-align:left;">
+        <p style="font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin:0 0 6px 0;">🍽️ Bir garson gibi düşünün.</p>
+        <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;margin:0;line-height:1.6;">Garson siparişinizi alır ve yemeği getirir — ama mutfağı asla yönetmez. GreenCheck ESG verisini teslim eder — ama kredi kararını asla vermez. Tüm yasal sorumluluk bankaya aittir.</p>
       </div>
-      <div class="slide-content solution-content">
-        <div class="solution-intro">
-          <h3 class="solution-hero">"We turn banks' existing field staff into digital ESG verifiers — <span class="no-wrap">no new hires, no new departments."</span></h3>
-          <p class="solution-desc">
-            GreenCheck embeds into existing bank operations. When an SME applies for credit, the nearest field officer completes a structured 5-10 minute ESG checklist during their regular visit. <strong>GPS-verified. Photo-evidenced. Instantly scored.</strong>
-          </p>
-          
-          <!-- Analogy Box -->
-          <div class="solution-analogy-box">
-            <span class="analogy-icon">📋</span>
-            <div class="analogy-content">
-              <h4 class="analogy-title">Think of it like a waiter.</h4>
-              <p class="analogy-text">The waiter takes your order and brings the food — but never runs the kitchen. GreenCheck delivers the ESG data — but never makes the credit decision. All legal and regulatory obligations remain exclusively with the bank — GreenCheck is the tool, not the authority.</p>
+
+      <!-- Önce / Sonra Karşılaştırması -->
+      <div style="display:flex;gap:24px;width:100%;max-width:620px;margin:0 auto;">
+
+        <!-- ÖNCE Kutusu -->
+        <div style="flex:1;background:#FFF5F5;border-left:4px solid #FF6B6B;padding:16px 24px;border-radius:8px;">
+          <span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.08em;background:rgba(255,107,107,0.12);color:#C0392B;padding:3px 10px;border-radius:6px;display:inline-block;margin-bottom:14px;">ÖNCE</span>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:grid;grid-template-columns:80px 1fr;align-items:baseline;border-bottom:1px dashed rgba(13,31,20,0.08);padding-bottom:8px;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;">Kim</span>
+              <span style="font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:#7F8C8D;">Dış denetçi</span>
+            </div>
+            <div style="display:grid;grid-template-columns:80px 1fr;align-items:baseline;border-bottom:1px dashed rgba(13,31,20,0.08);padding-bottom:8px;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;">Maliyet</span>
+              <span style="font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:#7F8C8D;">1.000+ $ <small style="font-size:11px;font-weight:400;">/ KOBİ</small></span>
+            </div>
+            <div style="display:grid;grid-template-columns:80px 1fr;align-items:baseline;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;">Süre</span>
+              <span style="font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:#7F8C8D;">Haftalar</span>
             </div>
           </div>
         </div>
-        
-        <div class="solution-comparison">
-          <!-- BEFORE Box -->
-          <div class="comparison-box before-box">
-            <span class="box-badge">BEFORE</span>
-            <div class="box-metrics">
-              <div class="metric-item">
-                <span class="metric-label">Who</span>
-                <span class="metric-val">External auditor</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-label">Cost</span>
-                <span class="metric-val">$1,000+ <small>/ SME</small></span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-label">Timeline</span>
-                <span class="metric-val">Weeks of delay</span>
-              </div>
+
+        <!-- SONRA Kutusu -->
+        <div style="flex:1;background:#E8F5EE;border-left:4px solid #2ECC71;padding:16px 24px;border-radius:8px;">
+          <span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.08em;background:rgba(46,204,113,0.15);color:#1A7A40;padding:3px 10px;border-radius:6px;display:inline-block;margin-bottom:14px;">GREENCHECK İLE</span>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:grid;grid-template-columns:80px 1fr;align-items:baseline;border-bottom:1px dashed rgba(46,204,113,0.2);padding-bottom:8px;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;">Kim</span>
+              <span style="font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:#1A7A40;">Saha görevlisi</span>
             </div>
-          </div>
-          
-          <!-- AFTER Box -->
-          <div class="comparison-box after-box">
-            <span class="box-badge">AFTER WITH GREENCHECK</span>
-            <div class="box-metrics">
-              <div class="metric-item">
-                <span class="metric-label">Who</span>
-                <span class="metric-val">Bank's own field officer</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-label">Cost</span>
-                <span class="metric-val">$40-60 <small>per SME</small></span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-label">Timeline</span>
-                <span class="metric-val">Same-day result</span>
-              </div>
+            <div style="display:grid;grid-template-columns:80px 1fr;align-items:baseline;border-bottom:1px dashed rgba(46,204,113,0.2);padding-bottom:8px;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;">Maliyet</span>
+              <span style="font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;color:#2ECC71;">40-60 $ <small style="font-size:11px;font-weight:400;color:#1A7A40;">/ KOBİ</small></span>
+            </div>
+            <div style="display:grid;grid-template-columns:80px 1fr;align-items:baseline;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;">Süre</span>
+              <span style="font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:#1A7A40;">Aynı gün sonuç</span>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    
-    <!-- Slide 6 -->
-    <div id="slide-6" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title how-title">How It Works</h1>
-      </div>
-      <div class="slide-content how-content">
-        <div class="process-flow">
-          
-          <!-- Step 1 -->
-          <div class="step-card">
-            <div class="step-number-watermark">01</div>
-            <div class="step-icon">🗂️</div>
-            <h3 class="step-title">Request & Assignment</h3>
-            <div class="step-subtitle">No specialist required</div>
-            <p class="step-desc">SME applies for credit. Bank officer opens GreenCheck. System assigns nearest field staff via map.</p>
-          </div>
-          
-          <div class="step-arrow">→</div>
-          
-          <!-- Step 2 -->
-          <div class="step-card">
-            <div class="step-number-watermark">02</div>
-            <div class="step-icon">📲</div>
-            <h3 class="step-title">Field Visit</h3>
-            <div class="step-subtitle">Zero extra trip needed</div>
-            <p class="step-desc">Officer visits SME during regular visit. Completes a structured yes/no checklist with photo evidence. Takes 5-10 minutes.</p>
-          </div>
-          
-          <div class="step-arrow">→</div>
-          
-          <!-- Step 3 -->
-          <div class="step-card">
-            <div class="step-number-watermark">03</div>
-            <div class="step-icon">⚡</div>
-            <h3 class="step-title">Auto Scoring</h3>
-            <div class="step-subtitle">TCFD + GRI compliant instantly</div>
-            <p class="step-desc">Data is processed instantly. GreenCheck generates a TCFD and GRI compliant sustainability profile automatically.</p>
-          </div>
-          
-          <div class="step-arrow">→</div>
-          
-          <!-- Step 4 -->
-          <div class="step-card">
-            <div class="step-number-watermark">04</div>
-            <div class="step-icon">✅</div>
-            <h3 class="step-title">Decision Ready</h3>
-            <div class="step-subtitle">We never touch the credit decision</div>
-            <p class="step-desc">Standardized report delivered to credit team. GreenCheck never touches the credit decision — only the data behind it.</p>
-          </div>
-          
+
+    <!-- Slide 5 — Nasıl Çalışır? + Teknoloji -->
+    <div id="slide-5" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:50px 80px;box-sizing:border-box;overflow:hidden;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title">Nasıl Çalışır?</h1>
+
+      <!-- 4 Kart Akışı -->
+      <div style="display:flex;flex-direction:row;gap:12px;align-items:stretch;margin-bottom:20px;">
+
+        <!-- Kart 1 -->
+        <div style="flex:1;background:#ffffff;border-radius:12px;padding:20px 16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-top:3px solid #2ECC71;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:#2ECC71;opacity:0.15;position:absolute;top:8px;right:12px;line-height:1;">01</div>
+          <div style="font-size:24px;line-height:1;">🗂️</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin:0;">Talep ve Atama</h3>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;flex-grow:1;">KOBİ kredi başvurusu yapar. Banka yetkilisi GreenCheck'i açar. Sistem harita üzerinden en yakın saha personeline görev atar.</p>
+          <span style="font-family:'DM Sans',sans-serif;font-size:12px;font-style:italic;color:#2ECC71;">Uzman gerekmez</span>
         </div>
-        
-        <!-- Training Note -->
-        <div class="step-training-note">
-          <span class="note-icon">🎓</span>
-          <p class="note-text">GreenCheck's environmental engineers and financial experts provide short onboarding training to bank field staff — so anyone can complete the ESG checklist accurately from day one.</p>
+
+        <!-- Ok -->
+        <div style="display:flex;align-items:center;font-size:24px;color:#2ECC71;flex-shrink:0;">→</div>
+
+        <!-- Kart 2 -->
+        <div style="flex:1;background:#ffffff;border-radius:12px;padding:20px 16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-top:3px solid #2ECC71;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:#2ECC71;opacity:0.15;position:absolute;top:8px;right:12px;line-height:1;">02</div>
+          <div style="font-size:24px;line-height:1;">📲</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin:0;">Saha Ziyareti</h3>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;flex-grow:1;">Görevli mevcut ziyareti sırasında KOBİ'yi ziyaret eder. Evet/hayır kontrol listesini fotoğraf kanıtıyla doldurur. 5-10 dakika sürer.</p>
+          <span style="font-family:'DM Sans',sans-serif;font-size:12px;font-style:italic;color:#2ECC71;">Ekstra ziyaret gerekmez</span>
         </div>
+
+        <!-- Ok -->
+        <div style="display:flex;align-items:center;font-size:24px;color:#2ECC71;flex-shrink:0;">→</div>
+
+        <!-- Kart 3 -->
+        <div style="flex:1;background:#ffffff;border-radius:12px;padding:20px 16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-top:3px solid #2ECC71;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:#2ECC71;opacity:0.15;position:absolute;top:8px;right:12px;line-height:1;">03</div>
+          <div style="font-size:24px;line-height:1;">⚡</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin:0;">Otomatik Skorlama</h3>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;flex-grow:1;">Veriler anında işlenir. GreenCheck otomatik olarak TCFD ve GRI uyumlu sürdürülebilirlik profili oluşturur.</p>
+          <span style="font-family:'DM Sans',sans-serif;font-size:12px;font-style:italic;color:#2ECC71;">Saniyeler içinde rapor</span>
+        </div>
+
+        <!-- Ok -->
+        <div style="display:flex;align-items:center;font-size:24px;color:#2ECC71;flex-shrink:0;">→</div>
+
+        <!-- Kart 4 -->
+        <div style="flex:1;background:#ffffff;border-radius:12px;padding:20px 16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-top:3px solid #2ECC71;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:#2ECC71;opacity:0.15;position:absolute;top:8px;right:12px;line-height:1;">04</div>
+          <div style="font-size:24px;line-height:1;">✅</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin:0;">Karar Desteği</h3>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;flex-grow:1;">Standartlaştırılmış rapor kredi ekibine iletilir. GreenCheck kredi kararına hiçbir zaman müdahil olmaz.</p>
+          <span style="font-family:'DM Sans',sans-serif;font-size:12px;font-style:italic;color:#2ECC71;">Sorumluluk tamamen bankada</span>
+        </div>
+
       </div>
+
+      <!-- Teknoloji Notu -->
+      <div style="background:#E8F5EE;border-left:4px solid #2ECC71;padding:14px 24px;border-radius:8px;margin-top:0;">
+        <span style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;color:#0D1F14;">🔬 Teknoloji Altyapısı: </span>
+        <span style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;line-height:1.6;">Mobil uygulama (iOS &amp; Android) + Web panel + REST API entegrasyonu. Fotoğraflar bilgisayarlı görü algoritmaları ile doğrulanır. GPS koordinatları ve zaman damgası ile manipülasyon engellenir. Veriler %70 saha girdisi + %30 ikincil kaynak ile ağırlıklandırılır. %15 üzeri sapma manuel incelemeyi tetikler.</span>
+      </div>
+
     </div>
-    
-    <!-- Slide 7 -->
-    <div id="slide-7" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title value-title">Value Proposition</h1>
+
+    <!-- Slide 6 — Değer Önerisi -->
+    <div id="slide-6" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:50px 80px;box-sizing:border-box;overflow:hidden;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title">Değer Önerisi</h1>
+
+      <!-- 3 Kart -->
+      <div style="display:flex;flex-direction:row;gap:20px;align-items:stretch;">
+
+        <!-- Kart 1 -->
+        <div style="flex:1;background:#ffffff;border-radius:16px;padding:28px 24px;box-shadow:0 4px 16px rgba(0,0,0,0.07);border-left:5px solid #2ECC71;display:flex;flex-direction:column;gap:12px;">
+          <div style="font-size:28px;line-height:1;">💰</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#0D1F14;margin:0;">%90 Maliyet Tasarrufu</h3>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:#2ECC71;line-height:1.1;">1.000$ → 40-60$</div>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;">KOBİ başına geleneksel denetim maliyeti 40-60 dolar bandına düşüyor. Aynı yasal uyumluluk, maliyetin onda biri.</p>
+        </div>
+
+        <!-- Kart 2 -->
+        <div style="flex:1;background:#ffffff;border-radius:16px;padding:28px 24px;box-shadow:0 4px 16px rgba(0,0,0,0.07);border-left:5px solid #2ECC71;display:flex;flex-direction:column;gap:12px;">
+          <div style="font-size:28px;line-height:1;">⚙️</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#0D1F14;margin:0;">Sıfır Operasyonel Yük</h3>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:#2ECC71;line-height:1.1;">0 yeni personel</div>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;">Yeni departman kurulmaz, yeni işe alım yapılmaz. Mevcut saha ziyaretlerine minimal bir dijital adım eklenir.</p>
+        </div>
+
+        <!-- Kart 3 -->
+        <div style="flex:1;background:#ffffff;border-radius:16px;padding:28px 24px;box-shadow:0 4px 16px rgba(0,0,0,0.07);border-left:5px solid #2ECC71;display:flex;flex-direction:column;gap:12px;">
+          <div style="font-size:28px;line-height:1;">🔒</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#0D1F14;margin:0;">Savunulabilir Veri</h3>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:#2ECC71;line-height:1.1;">%70 / %30</div>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;">%70 banka personeli girdisi, %30 ikincil kaynak doğrulaması. %15 üzeri sapma manuel incelemeyi tetikler. Regülatöre karşı savunulabilir.</p>
+        </div>
+
       </div>
-      <div class="slide-content value-content">
-        <div class="value-cards">
-          
-          <!-- Card 1: Cost Reduction -->
-          <div class="value-card">
-            <div class="value-icon">💸</div>
-            <h3 class="value-card-title">90% Cost Reduction</h3>
-            <div class="value-stat">$1,000+ → $40-60</div>
-            <p class="value-desc">Same legal compliance. One-tenth the cost. Per SME, every time.</p>
-          </div>
-          
-          <!-- Card 2: Zero Operational Burden -->
-          <div class="value-card">
-            <div class="value-icon">🏗️</div>
-            <h3 class="value-card-title">Zero Operational Burden</h3>
-            <div class="value-stat">0 new hires</div>
-            <p class="value-desc">Plugs into existing field visits as a minimal digital step. No new departments, no training programs.</p>
-          </div>
-          
-          <!-- Card 3: Defensible Data -->
-          <div class="value-card">
-            <div class="value-icon">🔒</div>
-            <h3 class="value-card-title">Defensible Data</h3>
-            <div class="value-stat">70/30 verification</div>
-            <p class="value-desc">70% bank personnel input, 30% secondary source. 15%+ deviation triggers manual review. Regulator-ready.</p>
-          </div>
+
+      <!-- Ek Değer — KOBİ Şeffaflık Paneli -->
+      <div style="background:#E8F5EE;border-radius:12px;padding:16px 24px;margin-top:20px;display:flex;gap:16px;align-items:center;">
+        <div style="font-size:36px;flex-shrink:0;line-height:1;">📱</div>
+        <div>
+          <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin:0 0 4px 0;">KOBİ Şeffaflık Paneli</p>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;margin:0;line-height:1.6;">KOBİ'ler kendi sürdürülebilirlik profillerini takip eder, zayıf oldukları alanları görür ve skorlarını geliştirerek yeşil kredilere erişim imkânı kazanır.</p>
         </div>
       </div>
+
     </div>
-    
-    <!-- Slide 8 -->
-    <div id="slide-8" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title comp-title">Competitive Landscape</h1>
-      </div>
-      <div class="slide-content comp-content">
-        <table class="comp-table">
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th>EcoVadis</th>
-              <th>Sustainalytics</th>
-              <th>MSCI ESG</th>
-              <th class="greencheck-cell-header">GreenCheck</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="feature-name">SME-Scale Field Operations</td>
-              <td><span class="icon-cross">❌</span></td>
-              <td><span class="icon-cross">❌</span></td>
-              <td><span class="icon-cross">❌</span></td>
-              <td class="greencheck-cell"><span class="icon-check">✅</span></td>
-            </tr>
-            <tr>
-              <td class="feature-name">Mobile Data Collection</td>
-              <td><span class="icon-cross">❌</span></td>
-              <td><span class="icon-cross">❌</span></td>
-              <td><span class="icon-cross">❌</span></td>
-              <td class="greencheck-cell"><span class="icon-check">✅</span></td>
-            </tr>
-            <tr>
-              <td class="feature-name">GPS + Photo Verification</td>
-              <td><span class="icon-cross">❌</span></td>
-              <td><span class="icon-cross">❌</span></td>
-              <td><span class="icon-cross">❌</span></td>
-              <td class="greencheck-cell"><span class="icon-check">✅</span></td>
-            </tr>
-            <tr>
-              <td class="feature-name">Bank Staff Integration</td>
-              <td><span class="icon-cross">❌</span></td>
-              <td><span class="icon-cross">❌</span></td>
-              <td><span class="icon-cross">❌</span></td>
-              <td class="greencheck-cell"><span class="icon-check">✅</span></td>
-            </tr>
-            <tr class="cost-row">
-              <td class="feature-name">Cost Per Assessment</td>
-              <td class="other-cost">$500-2,000</td>
-              <td class="other-cost">$800+</td>
-              <td class="other-cost">$1,000+</td>
-              <td class="greencheck-cell greencheck-cost">$40-60</td>
-            </tr>
-          </tbody>
-        </table>
-        
-        <p class="comp-summary">"Built from the ground up for SME-scale. Others weren't."</p>
-      </div>
+
+    <!-- Slide 7 — Rekabet -->
+    <div id="slide-7" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:50px 80px;box-sizing:border-box;overflow:hidden;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title">Rekabet Analizi</h1>
+
+      <!-- Giriş Cümlesi -->
+      <p style="font-family:'DM Sans',sans-serif;font-size:14px;color:#6B7F73;max-width:700px;margin-bottom:24px;line-height:1.6;">
+        Mevcut ESG çözümleri büyük kurumsal şirketler için tasarlandı. KOBİ ölçeğinde saha operasyonu yürüten, banka personelini entegre eden ve bu maliyette çalışan başka bir çözüm yok.
+      </p>
+
+      <!-- Karşılaştırma Tablosu -->
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="background:#0D1F14;color:#ffffff;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:600;padding:12px 16px;text-align:left;">Özellik</th>
+            <th style="background:#0D1F14;color:#ffffff;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:600;padding:12px 16px;text-align:center;">EcoVadis</th>
+            <th style="background:#0D1F14;color:#ffffff;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:600;padding:12px 16px;text-align:center;">Sustainalytics</th>
+            <th style="background:#0D1F14;color:#ffffff;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:600;padding:12px 16px;text-align:center;">MSCI ESG</th>
+            <th style="background:#2ECC71;color:#ffffff;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:700;padding:12px 16px;text-align:center;">GreenCheck</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Satır 1 -->
+          <tr style="background:#ffffff;">
+            <td style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:#0D1F14;padding:12px 16px;text-align:left;">KOBİ Ölçekli Saha Operasyonu</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#2ECC71;padding:12px 16px;text-align:center;background:#E8F5EE;">✅</td>
+          </tr>
+          <!-- Satır 2 -->
+          <tr style="background:#F9FBFA;">
+            <td style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:#0D1F14;padding:12px 16px;text-align:left;">Mobil Veri Toplama</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#2ECC71;padding:12px 16px;text-align:center;background:#E8F5EE;">✅</td>
+          </tr>
+          <!-- Satır 3 -->
+          <tr style="background:#ffffff;">
+            <td style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:#0D1F14;padding:12px 16px;text-align:left;">GPS + Fotoğraf Doğrulama</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#2ECC71;padding:12px 16px;text-align:center;background:#E8F5EE;">✅</td>
+          </tr>
+          <!-- Satır 4 -->
+          <tr style="background:#F9FBFA;">
+            <td style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:#0D1F14;padding:12px 16px;text-align:left;">Banka Personeli Entegrasyonu</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#FF6B6B;padding:12px 16px;text-align:center;">❌</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:18px;color:#2ECC71;padding:12px 16px;text-align:center;background:#E8F5EE;">✅</td>
+          </tr>
+          <!-- Satır 5: Maliyet -->
+          <tr style="background:#ffffff;">
+            <td style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:#0D1F14;padding:12px 16px;text-align:left;">Değerlendirme Başına Maliyet</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;padding:12px 16px;text-align:center;">500-2.000$</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;padding:12px 16px;text-align:center;">Sadece Kurumsal</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;padding:12px 16px;text-align:center;">Sadece Kurumsal</td>
+            <td style="font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;color:#2ECC71;padding:12px 16px;text-align:center;background:#E8F5EE;">40-60$</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Vurgu Cümlesi -->
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:#2ECC71;text-align:center;margin-top:16px;margin-bottom:0;">
+        "KOBİ ölçeği için sıfırdan tasarlandı. Diğerleri tasarlanmadı."
+      </p>
+
     </div>
-    
-    <!-- Slide 9 -->
-    <div id="slide-9" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title model-title">Business Model</h1>
-      </div>
-      <div class="slide-content model-content">
-        <div class="model-phases">
-          
-          <!-- Phase 1 Card -->
-          <div class="phase-card phase-1-card">
-            <span class="phase-label">Phase 1 — Now</span>
-            <h3 class="phase-title">Transaction-Based</h3>
-            <span class="phase-timeline">Months 6-12 post MVP</span>
-            <p class="phase-desc">Bank pays per verified SME report. Simple, no commitment required. Easy first contract.</p>
-            <div class="phase-price">$40-60 <small>per assessment</small></div>
-          </div>
-          
-          <!-- Phase 2 Card -->
-          <div class="phase-card phase-2-card">
-            <span class="phase-label">Phase 2 — Scale</span>
-            <h3 class="phase-title">Annual SaaS</h3>
-            <span class="phase-timeline">Months 12-18</span>
-            <p class="phase-desc">Portfolio-based flat annual license. Bank pays once for unlimited assessments within their SME portfolio.</p>
-            <div class="phase-price">Annual contract <small>per portfolio</small></div>
-          </div>
-          
+
+    <!-- Slide 8 — Pazar -->
+    <div id="slide-8" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:50px 80px;box-sizing:border-box;overflow:hidden;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title">Pazar</h1>
+
+      <!-- Üst: 3 Büyük Rakam -->
+      <div style="display:flex;flex-direction:row;gap:20px;align-items:stretch;">
+
+        <!-- Rakam 1 -->
+        <div style="flex:1;background:#ffffff;border-radius:12px;padding:20px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-top:3px solid #2ECC71;text-align:center;display:flex;flex-direction:column;gap:6px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:#2ECC71;line-height:1.1;">3,92 Milyon</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;">Türkiye'de Kayıtlı KOBİ</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#0D1F14;font-weight:600;">Bugün sıfır ESG ölçüm altyapısı</div>
         </div>
-        
-        <!-- Unit Economics Bar -->
-        <div class="unit-economics">
-          <div class="economics-header">Unit Economics</div>
-          <div class="economics-row">
-            <div class="economics-stat">
-              <span class="econ-val">~$8-12</span>
-              <span class="econ-label">Cost to serve per assessment</span>
-            </div>
-            <div class="economics-divider"></div>
-            <div class="economics-stat">
-              <span class="econ-val">~70%+</span>
-              <span class="econ-label">Gross profit margin</span>
-            </div>
-            <div class="economics-divider"></div>
-            <div class="economics-stat">
-              <span class="econ-val">$20K-30K</span>
-              <span class="econ-label">First contract ARR target (500 SMEs)</span>
-            </div>
+
+        <!-- Rakam 2 -->
+        <div style="flex:1;background:#ffffff;border-radius:12px;padding:20px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-top:3px solid #2ECC71;text-align:center;display:flex;flex-direction:column;gap:6px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:#2ECC71;line-height:1.1;">3,15 Milyar $</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;">Türkiye Yeşil Dönüşüm Fonu</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#0D1F14;font-weight:600;">Dağıtılmayı bekliyor</div>
+        </div>
+
+        <!-- Rakam 3 -->
+        <div style="flex:1;background:#ffffff;border-radius:12px;padding:20px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-top:3px solid #2ECC71;text-align:center;display:flex;flex-direction:column;gap:6px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:#2ECC71;line-height:1.1;">4,09 Milyar $</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;">Global ESG Veri Pazarı (2030)</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#0D1F14;font-weight:600;">%29,2 yıllık büyüme</div>
+        </div>
+
+      </div>
+
+      <!-- Ayırıcı Çizgi -->
+      <hr style="border:none;border-top:1px solid rgba(46,204,113,0.2);margin:24px 0;">
+
+      <!-- Alt: TAM / SAM / SOM -->
+      <div style="display:flex;flex-direction:row;gap:20px;align-items:stretch;">
+
+        <!-- TAM -->
+        <div style="flex:1;background:#F4F7F5;border-radius:12px;padding:20px 24px;text-align:center;display:flex;flex-direction:column;gap:8px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#2ECC71;">TAM</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:#0D1F14;line-height:1.1;">~12 Milyar $</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;line-height:1.5;">Global KOBİ ESG veri doğrulama potansiyeli</div>
+        </div>
+
+        <!-- SAM -->
+        <div style="flex:1;background:#F4F7F5;border-radius:12px;padding:20px 24px;text-align:center;display:flex;flex-direction:column;gap:8px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#2ECC71;">SAM</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:#0D1F14;line-height:1.1;">~1,2 Milyar $</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;line-height:1.5;">Türkiye + İngiltere odaklı banka portföyleri</div>
+        </div>
+
+        <!-- SOM -->
+        <div style="flex:1;background:#F4F7F5;border-radius:12px;padding:20px 24px;text-align:center;display:flex;flex-direction:column;gap:8px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:#2ECC71;">SOM</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:#0D1F14;line-height:1.1;">~45 Milyon $</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;line-height:1.5;">İlk 3 yılda hedeflenen pazar payı</div>
+        </div>
+
+      </div>
+
+      <!-- Büyüme Notu -->
+      <div style="background:#E8F5EE;border-left:4px solid #2ECC71;padding:12px 24px;border-radius:8px;margin-top:16px;">
+        <span style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;">📋 Bu büyüme isteğe bağlı değil — tamamen düzenleyici baskı kaynaklı. TCFD ve ISSB uyumu zorunlu hale geldikçe bankalar bu veriyi toplamak zorunda kalacak.</span>
+      </div>
+
+    </div>
+
+    <!-- Slide 9 — İş Modeli -->
+    <div id="slide-9" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:50px 80px;box-sizing:border-box;overflow:hidden;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title">İş Modeli</h1>
+
+      <!-- 2 Faz Kartı -->
+      <div style="display:flex;gap:24px;align-items:stretch;">
+
+        <!-- Faz 1 -->
+        <div style="flex:1;background:#F9FBFA;border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;color:#2ECC71;text-transform:uppercase;letter-spacing:2px;">FAZ 1 — ŞİMDİ</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:700;color:#0D1F14;margin:0;">İşlem Bazlı</h3>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;">MVP sonrası 6-12. ay</div>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;flex-grow:1;">Banka her doğrulanmış KOBİ raporu için ödeme yapar. Düşük taahhüt, kolay ilk sözleşme.</p>
+          <div style="margin-top:8px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:48px;font-weight:700;color:#2ECC71;line-height:1;">40-60$</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;margin-top:4px;">değerlendirme başına</div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <!-- Slide 10 -->
-    <div id="slide-10" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title traction-title">Traction</h1>
-      </div>
-      <div class="slide-content traction-content">
-        <div class="traction-columns">
-          
-          <!-- Left Column: Achieved -->
-          <div class="traction-column achieved-col">
-            <h3 class="traction-col-title">ACHIEVED</h3>
-            <div class="traction-items">
-              
-              <!-- Item 1 -->
-              <div class="achieved-card">
-                <span class="achieved-icon">✅</span>
-                <div class="achieved-body">
-                  <h4 class="achieved-card-title">TÜBİTAK 1812 BiGG Program — Pre-Selection</h4>
-                  <p class="achieved-card-desc">Received pre-selection from Turkey's most competitive early-stage startup program.</p>
-                </div>
-              </div>
-              
-              <!-- Item 2 -->
-              <div class="achieved-card">
-                <span class="achieved-icon">✅</span>
-                <div class="achieved-body">
-                  <h4 class="achieved-card-title">Backend In Final Development</h4>
-                  <p class="achieved-card-desc">Core infrastructure nearly complete. Robust backend architecture built from the ground up, production-ready in weeks.</p>
-                </div>
-              </div>
-              
-            </div>
+
+        <!-- Faz 2 -->
+        <div style="flex:1;background:#E8F5EE;border-radius:16px;padding:28px 24px;border:2px solid #2ECC71;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;color:#2ECC71;text-transform:uppercase;letter-spacing:2px;">FAZ 2 — BÜYÜME</div>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:700;color:#0D1F14;margin:0;">Yıllık SaaS Lisansı</h3>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;">12-18. ay</div>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;flex-grow:1;">Portföy bazlı sabit yıllık ücret. Banka bir kez ödeyerek tüm KOBİ portföyü için sınırsız değerlendirme alır.</p>
+          <div style="margin-top:8px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:48px;font-weight:700;color:#2ECC71;line-height:1;">Yıllık Sözleşme</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;margin-top:4px;">portföy başına</div>
           </div>
-          
-          <!-- Right Column: Next Milestones -->
-          <div class="traction-column milestones-col">
-            <h3 class="traction-col-title">NEXT MILESTONES</h3>
-            <div class="milestone-items">
-              
-              <!-- Milestone 1 -->
-              <div class="milestone-item">
-                <div class="milestone-left">
-                  <span class="milestone-icon">🎯</span>
-                  <span class="milestone-title">MVP Complete</span>
-                </div>
-                <div class="milestone-date">Q3 2026</div>
-              </div>
-              
-              <!-- Milestone 2 -->
-              <div class="milestone-item">
-                <div class="milestone-left">
-                  <span class="milestone-icon">🎯</span>
-                  <span class="milestone-title">First Paid Pilot</span>
-                </div>
-                <div class="milestone-date">Q4 2026</div>
-              </div>
-              
-            </div>
-          </div>
-          
         </div>
+
       </div>
-    </div>
-    
-    <!-- Slide 11 -->
-    <div id="slide-11" class="slide">
-      <div class="slide-header">
-        <h1 class="slide-title truk-title">What We Want from TRUK</h1>
-      </div>
-      <div class="slide-content truk-content">
-        <div class="truk-columns">
-          
-          <!-- Left Column: What We're Looking For -->
-          <div class="truk-column looking-col">
-            <h3 class="truk-col-title">WHAT WE'RE LOOKING FOR</h3>
-            <div class="truk-items">
-              <div class="truk-item grey-item">
-                <span class="truk-arrow-icon">→</span>
-                <p class="truk-text">Access to <strong>DenizBank's SME network</strong> for pilot design</p>
-              </div>
-              <div class="truk-item grey-item">
-                <span class="truk-arrow-icon">→</span>
-                <p class="truk-text">Regulatory navigation support (<strong>BDDK and CMB</strong> compliance)</p>
-              </div>
-              <div class="truk-item grey-item">
-                <span class="truk-arrow-icon">→</span>
-                <p class="truk-text">Introduction to <strong>UK-based fintech partners</strong> for market entry</p>
-              </div>
-              <div class="truk-item grey-item">
-                <span class="truk-arrow-icon">→</span>
-                <p class="truk-text">Mentorship on <strong>B2B enterprise sales cycles</strong></p>
-              </div>
-            </div>
+
+      <!-- Ayırıcı Çizgi -->
+      <hr style="border:none;border-top:1px solid rgba(46,204,113,0.2);margin:20px 0;">
+
+      <!-- Birim Ekonomisi -->
+      <div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;color:#2ECC71;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;">BİRİM EKONOMİSİ</div>
+        <div style="display:flex;align-items:center;">
+
+          <!-- Stat 1 -->
+          <div style="flex:1;text-align:center;border-right:1px solid rgba(46,204,113,0.2);padding:0 16px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:#2ECC71;line-height:1.1;">~8-12$</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;margin-top:6px;">Değerlendirme başına maliyet</div>
           </div>
-          
-          <!-- Right Column: What We Bring to TRUK -->
-          <div class="truk-column bringing-col">
-            <h3 class="truk-col-title">WHAT WE BRING TO TRUK</h3>
-            <div class="truk-items">
-              <div class="truk-item green-item">
-                <span class="truk-arrow-icon">→</span>
-                <p class="truk-text"><strong>First-mover</strong> in Turkey's SME ESG data infrastructure</p>
-              </div>
-              <div class="truk-item green-item">
-                <span class="truk-arrow-icon">→</span>
-                <p class="truk-text"><strong>TÜBİTAK-validated</strong> technical foundation</p>
-              </div>
-              <div class="truk-item green-item">
-                <span class="truk-arrow-icon">→</span>
-                <p class="truk-text">Clear <strong>regulatory tailwind</strong> — this is a mandate, not a bet</p>
-              </div>
-              <div class="truk-item green-item">
-                <span class="truk-arrow-icon">→</span>
-                <p class="truk-text">A team building this because the <strong>problem is real</strong></p>
-              </div>
-            </div>
+
+          <!-- Stat 2 -->
+          <div style="flex:1;text-align:center;border-right:1px solid rgba(46,204,113,0.2);padding:0 16px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:#2ECC71;line-height:1.1;">%70+</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;margin-top:6px;">Brüt kâr marjı</div>
           </div>
-          
+
+          <!-- Stat 3 -->
+          <div style="flex:1;text-align:center;padding:0 16px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;color:#2ECC71;line-height:1.1;">20-30K$</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;margin-top:6px;">İlk sözleşme hedefi (500 değerlendirme/yıl)</div>
+          </div>
+
         </div>
       </div>
+
     </div>
-    
-    <!-- Slide 12 -->
+
+    <!-- Slide 10 — 5 Yıllık Vizyon -->
+    <div id="slide-10" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:50px 80px;box-sizing:border-box;overflow:hidden;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title">5 Yıllık Vizyon</h1>
+
+      <!-- Giriş Cümlesi -->
+      <p style="font-family:'DM Sans',sans-serif;font-size:15px;color:#6B7F73;max-width:680px;margin-bottom:28px;line-height:1.6;">
+        GreenCheck, Türkiye ve İngiltere'den başlayarak küresel ölçekte KOBİ ESG veri altyapısının standart platformu olmayı hedefliyor.
+      </p>
+
+      <!-- Yol Haritası -->
+      <div style="display:flex;flex-direction:column;gap:0;margin-bottom:24px;">
+
+        <!-- Aşama 1 -->
+        <div style="display:flex;gap:20px;align-items:flex-start;margin-bottom:8px;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:80px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#2ECC71;white-space:nowrap;">2026 Q3</div>
+            <div style="width:2px;height:28px;background:#E8F5EE;margin-top:4px;"></div>
+          </div>
+          <div style="flex:1;background:#ffffff;border-radius:8px;padding:12px 16px;border-left:3px solid #2ECC71;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin-bottom:3px;">MVP Tamamlandı</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.5;">Banka paneli, saha personeli mobil uygulaması ve KOBİ şeffaflık paneli production'a alınıyor.</div>
+          </div>
+        </div>
+
+        <!-- Aşama 2 -->
+        <div style="display:flex;gap:20px;align-items:flex-start;margin-bottom:8px;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:80px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#2ECC71;white-space:nowrap;">2027 Q1-Q2</div>
+            <div style="width:2px;height:28px;background:#E8F5EE;margin-top:4px;"></div>
+          </div>
+          <div style="flex:1;background:#ffffff;border-radius:8px;padding:12px 16px;border-left:3px solid #2ECC71;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin-bottom:3px;">İlk Ücretli Pilot</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.5;">Türkiye'de ilk banka ile ücretli pilot başlıyor. 500 KOBİ değerlendirmesi hedefleniyor.</div>
+          </div>
+        </div>
+
+        <!-- Aşama 3 -->
+        <div style="display:flex;gap:20px;align-items:flex-start;margin-bottom:8px;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:80px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#2ECC71;white-space:nowrap;">2028</div>
+            <div style="width:2px;height:28px;background:#E8F5EE;margin-top:4px;"></div>
+          </div>
+          <div style="flex:1;background:#ffffff;border-radius:8px;padding:12px 16px;border-left:3px solid #2ECC71;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin-bottom:3px;">Ticari SaaS Geliri</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.5;">Portföy bazlı lisans modeliyle Türkiye'de 3-5 banka ile sözleşme. İngiltere pazar araştırması tamamlanıyor.</div>
+          </div>
+        </div>
+
+        <!-- Aşama 4 -->
+        <div style="display:flex;gap:20px;align-items:flex-start;margin-bottom:8px;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:80px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#2ECC71;white-space:nowrap;">2029</div>
+            <div style="width:2px;height:28px;background:#E8F5EE;margin-top:4px;"></div>
+          </div>
+          <div style="flex:1;background:#ffffff;border-radius:8px;padding:12px 16px;border-left:3px solid #2ECC71;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin-bottom:3px;">İngiltere Pazarına Giriş</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.5;">TCFD zorunluluğu kapsamındaki İngiliz bankalarıyla pilot. Avrupa düzenleyici uyum sertifikası.</div>
+          </div>
+        </div>
+
+        <!-- Aşama 5 -->
+        <div style="display:flex;gap:20px;align-items:flex-start;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:80px;">
+            <div style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#2ECC71;white-space:nowrap;">2030+</div>
+          </div>
+          <div style="flex:1;background:#ffffff;border-radius:8px;padding:12px 16px;border-left:3px solid #2ECC71;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:#0D1F14;margin-bottom:3px;">Küresel Ölçek</div>
+            <div style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.5;">AB, Orta Doğu ve Asya pazarlarına açılım. 50+ banka, 1 milyon+ KOBİ değerlendirmesi.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hedef Metrikler -->
+      <div style="display:flex;gap:16px;">
+        <div style="flex:1;text-align:center;background:#F4F7F5;border-radius:12px;padding:16px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:#2ECC71;line-height:1.1;">50+</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;margin-top:4px;">Hedef Banka</div>
+        </div>
+        <div style="flex:1;text-align:center;background:#F4F7F5;border-radius:12px;padding:16px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:#2ECC71;line-height:1.1;">1M+</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;margin-top:4px;">KOBİ Değerlendirmesi</div>
+        </div>
+        <div style="flex:1;text-align:center;background:#F4F7F5;border-radius:12px;padding:16px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:#2ECC71;line-height:1.1;">5+</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#6B7F73;margin-top:4px;">Ülke Pazarı</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slide 11 — Ekip -->
+    <div id="slide-11" class="slide" style="display:flex;flex-direction:column;justify-content:center;align-items:center;padding:50px 80px;box-sizing:border-box;overflow:hidden;width:100%;">
+
+      <!-- Başlık -->
+      <h1 class="slide-title" style="align-self:flex-start;">Ekip</h1>
+
+      <!-- 2 Kart -->
+      <div style="display:flex;gap:32px;justify-content:center;width:100%;">
+
+        <!-- Kart 1 — Uğur -->
+        <div style="flex:1;max-width:380px;background:#ffffff;border-radius:16px;padding:32px 28px;box-shadow:0 4px 16px rgba(0,0,0,0.07);text-align:center;display:flex;flex-direction:column;align-items:center;">
+          <img src="ugur.png" alt="Uğur Berktaş" style="width:120px;height:120px;object-fit:cover;border-radius:50%;border:3px solid #2ECC71;margin-bottom:16px;">
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:700;color:#0D1F14;margin-bottom:6px;">Uğur Berktaş</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;color:#2ECC71;text-transform:uppercase;letter-spacing:2px;margin-bottom:14px;">KURUCU ORTAK &amp; CEO</div>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;">Bankacılık altyapısı geçmişi. DenizBank'ta IT eğitimi. DevOps ve sistem mimarisine liderlik eder. Platformun banka standartlarına uygun olarak inşa edilmesini sağlar.</p>
+        </div>
+
+        <!-- Kart 2 — Ferhat -->
+        <div style="flex:1;max-width:380px;background:#ffffff;border-radius:16px;padding:32px 28px;box-shadow:0 4px 16px rgba(0,0,0,0.07);text-align:center;display:flex;flex-direction:column;align-items:center;">
+          <img src="ferhat.png" alt="Ferhat Bilgiç" style="width:120px;height:120px;object-fit:cover;border-radius:50%;border:3px solid #2ECC71;margin-bottom:16px;">
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:700;color:#0D1F14;margin-bottom:6px;">Ferhat Bilgiç</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;color:#2ECC71;text-transform:uppercase;letter-spacing:2px;margin-bottom:14px;">KURUCU ORTAK &amp; CTO</div>
+          <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;line-height:1.6;margin:0;">Platformun ana mimarisi, backend süreçleri ve tüm sistem entegrasyonları kendisinde. Saha personelinin kullandığı mobil uygulama ile bankanın raporlama paneli arasındaki kesintisiz ve güvenli veri akışının teknik yükünü o omuzlamaktadır.</p>
+        </div>
+
+      </div>
+
+      <!-- Neden Biz? -->
+      <div style="background:#E8F5EE;border-radius:12px;padding:16px 24px;margin-top:24px;text-align:center;width:100%;box-sizing:border-box;">
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:#0D1F14;">Neden biz?</div>
+        <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:#6B7F73;margin:6px 0 0 0;line-height:1.6;">GreenCheck'i trend olduğu için değil, problemi bizzat yaşadığımız için inşa ediyoruz. Bankacılık ve teknik altyapı deneyimimiz bu çözümü gerçekten hayata geçirebilecek ekip olduğumuzu kanıtlıyor.</p>
+      </div>
+
+    </div>
+
+    <!-- Slide 12 — Kapanış -->
     <div id="slide-12" class="slide slide-closing">
-      <img src="logo.png" alt="GreenCheck Logo" class="closing-logo-large">
-      <p class="closing-quote">The infrastructure for green finance doesn't exist yet.</p>
-      <h2 class="closing-claim">We're building it.</h2>
-      <div class="closing-divider-line"></div>
-      <p class="closing-truk-text">TRUK Accelerator — May 2026</p>
+      <div class="cover-content">
+        <img src="logo.png" alt="GreenCheck" class="closing-logo-large">
+        <p class="closing-quote">Yeşil finansman için gerekli altyapı henüz mevcut değil.</p>
+        <h2 class="closing-claim">Biz inşa ediyoruz.</h2>
+        <div class="closing-divider-line"></div>
+        <p class="closing-truk-text">greencheck.io</p>
+      </div>
     </div>
-    
+
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
